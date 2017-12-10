@@ -1,4 +1,3 @@
-import hu.helixlab.Game;
 
 public class Main {
 
@@ -8,5 +7,12 @@ public class Main {
 
        // Game game = new Game();
         //Game.playBarchobaWithNumbers();
+
+        Temperature temperature = new Temperature();
+        Temperature.getTemperatureDataFromConsole();
+
+        System.out.println(Temperature.printHighestTemperature());
+        System.out.println(Temperature.printLowestTemperature());
+
     }
 }
