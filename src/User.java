@@ -9,10 +9,11 @@ public class User {
 
     public User(){}
 
-    public User(String firstName, String lastName, String password, int age) {
+    public User(String firstName, String lastName, int age) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.password = password;
+        //Itt kérem be a 7 karakter hosszúságú jelszót.
+        this.password = PasswordGenerator.generatePassword(7);
         this.age = age;
     }
 
